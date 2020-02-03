@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMyDarkBlue"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="50dp" android:paddingRight="50dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MyNotes"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-light"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="139dp"
+                    android:id="@+id/imageView3" android:layout_row="0" android:layout_column="1"
+                    android:src="@drawable/ic_border"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_height="55dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/txtEmail" android:height="55dp" android:layout_width="match_parent"
+                    android:textColor="@android:color/white" android:hint="E-Posta"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginBottom="13dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:drawableLeft="@drawable/ic_mail" android:paddingLeft="20dp"
+                    android:drawablePadding="20dp" android:includeFontPadding="false"
+                    android:drawableTint="@android:color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_height="55dp"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/txtPassword" android:height="55dp" android:layout_width="match_parent"
+                    android:textColor="@android:color/white" android:hint="Parola"
+                    android:textColorHint="@android:color/white"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:drawableLeft="@drawable/ic_password" android:paddingLeft="20dp"
+                    android:drawablePadding="20dp" android:includeFontPadding="false"
+                    android:drawableTint="@android:color/white" android:layout_marginBottom="13dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginBottom="13dp">
+
+
+                <TextView
+                    android:text="Şifremi Unuttum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/btnForgotPassword"
+                    android:layout_weight="1"
+                    android:textAlignment="center" android:textColor="@android:color/white"
+                    android:clickable="true"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:gravity="center"
+                android:background="@drawable/round"
+                >
+                <Button
+                    android:background="@drawable/custom_bg"
+
+                    android:textColor="#FFFF"
+                    android:text="giriş"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/btnLogin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="13dp"
+                    android:gravity="bottom"
+                    >
+                    <TextView
+                        android:textColor="@android:color/white"
+                        android:layout_marginBottom="13dp"
+                        android:gravity="center"
+                        android:text="Facebook ile giriş yap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <com.facebook.login.widget.LoginButton
+                        android:textColor="#FFFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnLoginFacebook"
+                        android:visibility="gone"
+                        />
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/ic_btn_login_fb"
+                       >
+                        <Button
+                            android:id="@+id/btnLoginFb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_bg"
+                            android:gravity="center"
+                            android:text="giriş"
+                            android:textAlignment="center"
+                            android:textColor="#FFFF"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <TextView
+                        android:textColor="@android:color/white"
+                        android:text="Hesabın yok mu? "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/btnSign"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:gravity="left"
+                        android:text="Şimdi Oluştur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="18sp" android:linksClickable="false"
+                        android:clickable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+</RelativeLayout>

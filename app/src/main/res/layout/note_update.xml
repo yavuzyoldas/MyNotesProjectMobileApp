@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorTransparent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+   <LinearLayout
+       android:background="@drawable/layout_bg"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <EditText
+           android:textColorHint="@color/colorWhite"
+           android:textColor="#FFFFFF"
+           android:id="@+id/editTextNoteTitleUpdate"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="text|textMultiLine"
+           android:ems="10"
+           android:hint="Yeni baslik girin"/>
+       <EditText
+           android:textColor="#FFFFFF"
+           android:id="@+id/editTextNoteContentUpdate"
+           android:textColorHint="@color/colorWhite"
+           android:inputType="text|textMultiLine"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:hint="Yeni icerik girin"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/round">
+           <Button
+               android:background="@drawable/custom_bg"
+               android:textColor="#FFFFFF"
+               android:id="@+id/updateButton"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Güncelle" />
+       </LinearLayout>
+   </LinearLayout>
+
+</RelativeLayout >
+</ScrollView>
